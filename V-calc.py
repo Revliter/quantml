@@ -31,7 +31,7 @@ def V_calc(phi, b, k, E, t, T, dt):
 # code: a string representing the stock code
 # T: total transaction time (unit: second)
 # dt: transaction interval (uint: second)
-# phi_index: transaction pace (should be 2-fast/1-moderate/0-slow)
+# phi_index: transaction pace (should be 0-fast/1-moderate/2-slow)
 # Q: total transaction amount
 
 # the funciton return an np.darray type containing T/dt elements,
