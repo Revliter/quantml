@@ -28,6 +28,14 @@ def V_calc(phi, b, k, E, t, T, dt):
     sum += ans * dt
     return math.floor(ans * dt)
 
+# code: a string representing the stock code
+# T: total transaction time (unit: second)
+# dt: transaction interval (uint: second)
+# phi_index: transaction pace (should be 2-fast/1-moderate/0-slow)
+# Q: total transaction amount
+
+# the funciton return an np.darray type containing T/dt elements,
+# representing the ideal transaction amount for each interval
 def Transaction(code, T, dt, phi_index, Q):
     index, res = namelist[str(code)], []
     b, k, phi, E = b_list[index], k_list[index], phi_list[phi_index], E_list[index]
